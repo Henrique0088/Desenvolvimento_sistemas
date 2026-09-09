@@ -8,7 +8,6 @@ public class App {
 		Scanner leia = new Scanner(System.in);
 		
 		int n1, n2;
-		int media;
 		
 		System.out.println("Digite o primeiro numero");
 		n1 = leia.nextInt();
@@ -21,16 +20,20 @@ public class App {
 		
 		   switch (opcao) {
 		     case 1:
-		    	media = (n1 + n2) / 2
+		    	System.out.println("A média é: "+ (n1 + n2) /2);
 		    	break;
 		     case 2:
-		    	 System.out.println("Segundo");
+		    	 if(n1 > n2) {
+		    		 System.out.println("Soma: "+ n1 + n2);
+		    	 } else if (n2 > n1) {
+		    		 System.out.println("Subtrair: " + n1 + n2);
+		    	 }
 		    	 break;
 		     case 3:
-		    	 System.out.println("Terça");
+		    	 System.out.println("Multiplicar: "+ n1 * n2);
 		    	 break;
 		     case 4:
-		    	 System.out.println("Quarta");
+		    	 System.out.println("Dividir: "+ n1 / n2 );
 		    	 break;
 		     default:
 		    	 System.out.println("Opção invalida");
